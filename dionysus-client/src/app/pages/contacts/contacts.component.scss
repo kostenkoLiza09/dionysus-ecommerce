@@ -1,0 +1,48 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: 20px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-block img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.info-text h3 {
+  color: var(--11, #201103);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  color: var(--11, #201103);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.image-block {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}

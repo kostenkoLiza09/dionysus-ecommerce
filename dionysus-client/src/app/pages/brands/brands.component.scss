@@ -1,0 +1,21 @@
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-item {
+  margin: 10px;
+}
+
+.photo-image {
+  width: 170px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.photo-image:hover {
+  filter: none;
+  transform: scale(1.1);
+}

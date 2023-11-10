@@ -1,0 +1,52 @@
+<ng-container *ngIf="liqueurPlpList$ | async as liqueurPlpList">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <div class="card-container">
+    <div class="main-container">
+      <div class="filter-container">
+        <div class="filter-title">Country ({{(uniqueCountries$ | async)?.length }})</div>
+        <div class="filter-item" *ngFor="let country of (uniqueCountries$ | async)">
+          <input type="checkbox" id="{{country}}-filter" (change)="onFilterChange('country', country)"
+                 [checked]="selectedCountry === country"/>
+          <label for="{{country}}-filter" class="filter-label">{{country}}</label>
+        </div>
+        <div class="line"></div>
+        <div class="filter-title">Brand ({{(uniqueBrands$ | async)?.length }})</div>
+        <div class="filter-item" *ngFor="let brand of (uniqueBrands$ | async)">
+          <input type="checkbox" id="{{brand}}-filter" (change)="onFilterChange('brand', brand)"
+                 [checked]="selectedBrand === brand"/>
+          <label for="{{brand}}-filter" class="filter-label">{{brand}}</label>
+        </div>
+        <div class="line"></div>
+        <div class="filter-title">Style ({{(uniqueStyles$ | async)?.length }})</div>
+        <div class="filter-item" *ngFor="let style of (uniqueStyles$ | async)">
+          <input type="checkbox" id="{{style}}-filter" (change)="onFilterChange('style', style )"
+                 [checked]="selectedStyle === style"/>
+          <label for="{{style}}-filter" class="filter-label">{{style}}</label>
+        </div>
+        <div class="line"></div>
+        <div class="filter-title">Region ({{(uniqueRegions$ | async)?.length }})</div>
+        <div class="filter-item" *ngFor="let region of (uniqueRegions$ | async)">
+          <input type="checkbox" id="{{region}}-filter" (change)="onFilterChange('region', region )"
+                 [checked]="selectedRegion === region"/>
+          <label for="{{region}}-filter" class="filter-label">{{region}} </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" *ngFor="let plp of liqueurPlpList" (click)="redirectToLiqueurPdp(plp.id)">
+        <div class="whiskey-brand">{{plp.countryType}} </div>
+        <img src="{{plp.image}}" alt="Product Image">
+        <div class="content">
+          <div class="name">{{plp.name}}</div>
+          <div class="info">
+            <p class="price">{{plp.price}}.00$</p>
+            <p class="country">{{plp.liqueurBrandType}}</p>
+          </div>
+          <button class="buy-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

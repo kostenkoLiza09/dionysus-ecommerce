@@ -1,0 +1,54 @@
+.search-bar-container input::placeholder {
+  color: rgba(255, 255, 255, 0.48);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.search-bar{
+  height: 45px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.placeholder{
+  color: rgba(255, 255, 255, 0.48);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.search-bar {
+  background-color: #3B4D17;
+}
+
+
+.search-bar {
+  height: 45px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  background-color: #3B4D17;
+  border: 1px solid #FFF;
+  border-radius: 9px;
+  padding: 0 10px;
+  margin-right: 23px;
+}
+
+.search-input {
+  color: #FFFFFF;
+}
+.dropdown-menu {
+  display: none;
+  &.show {
+    display: block;
+  }
+
+  max-height: 200px;
+  overflow-y: auto;
+  max-width: 500px;
+
+}
+

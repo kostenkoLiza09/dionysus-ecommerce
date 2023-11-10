@@ -1,0 +1,22 @@
+.img-logo-1 {
+  width: 20%;
+  height: auto;
+}
+.login-b{
+  display: flex;
+  width: 184px;
+  height: 38px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #3B4D17;
+  color: var(--67, #FBFAF7);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

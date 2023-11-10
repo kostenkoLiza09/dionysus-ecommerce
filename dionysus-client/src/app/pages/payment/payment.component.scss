@@ -1,0 +1,102 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+}
+
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.left-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  margin-right: 40px;
+  opacity: 0.4;
+}
+
+.right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 40%;
+  margin-left: 40px;
+  opacity: 0.4;
+}
+
+.card {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 230px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--67, #FBFAF7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 20%;
+    height: auto;
+  }
+
+  text-1{
+    color: var(--11, #201103);
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.9%;
+    text-align: center;
+
+  }
+
+  h1{
+    margin-left: 40px;
+    margin-bottom: 30px;
+    color: #201103;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  h2 {
+    color: #201103;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+
+  }
+
+  p {
+    color: var(--11, #201103);
+    margin-left: 13px;
+    margin-right: 13px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.9%;
+
+  }
+
+

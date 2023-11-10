@@ -1,0 +1,37 @@
+.delivery-block {
+  margin-top: 40px;
+  text-align: start;
+}
+
+.delivery-header {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.delivery-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.delivery-list li {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.delivery-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}

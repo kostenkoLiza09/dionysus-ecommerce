@@ -1,0 +1,53 @@
+<section class="about-section">
+  <div class="about-content">
+    <h1 class="about-title">Welcome to Dionysus Online Store!</h1>
+    <p class="about-description">
+      We are Dionysus Online Store, a passionate team of enthusiasts
+      dedicated to providing you with an extraordinary
+      experience in the captivating world of wines and spirits.
+      Stepping into our store, you'll embark on a journey through
+      the finest selection of wines, whiskies, rums, and a myriad
+      of other exceptional beverages, all curated with utmost care and discernment
+      for true connoisseurs like yourself.
+    </p>
+    <p class="about-description">
+      At Dionysus, our mission is to offer you a captivating array of
+      premium-quality beverages, sourced from renowned vineyards and
+      distilleries around the globe. We take pride in ensuring that
+      every sip you take is nothing short of a delightful adventure,
+      and to that end, our friendly and knowledgeable team is always
+      at your service, ready to assist you in discovering your perfect libation.
+    </p>
+    <p class="about-description">
+      With a dedication to excellence, we strive to exceed your expectations
+      at every turn. From your first encounter with our user-friendly website
+      to the seamless browsing experience, we ensure your satisfaction every step
+      of the way. Our efficient shipping and delivery services guarantee that your
+      coveted beverages will reach your doorstep promptly, ensuring you never have
+      to wait long to indulge in the delights of Dionysus.
+    </p>
+    <div class="about-gallery">
+      <div class="slider-wrapper">
+        <div class="slider" [style.transform]="sliderTransform">
+          <div *ngFor="let image of galleryImages" class="slider-item" (click)="openImageModal(image)">
+            <img [src]="image.src" [alt]="image.caption" class="about-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="background-images">
+  <div class="left-image">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <image xlink:href="assets/background1.svg" width="100%" height="100%" />
+    </svg>
+  </div>
+  <div class="right-image">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <image xlink:href="assets/background2.svg" width="100%" height="100%" />
+    </svg>
+  </div>
+</div>
+

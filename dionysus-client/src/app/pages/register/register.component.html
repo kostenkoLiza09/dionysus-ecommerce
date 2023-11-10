@@ -1,0 +1,95 @@
+<!--<form>-->
+<!--  <h1 class="h3 mb-3 fw-normal">Please sign up</h1>-->
+
+<!--  <div class="form-floating">-->
+<!--    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">-->
+<!--    <label for="floatingInput">Email address</label>-->
+<!--  </div>-->
+<!--  <div class="form-floating">-->
+<!--    <input type="text" class="form-control" id="floatingName" placeholder="name@example.com">-->
+<!--    <label for="floatingName">Name</label>-->
+<!--  </div>-->
+<!--  <div class="form-floating">-->
+<!--    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">-->
+<!--    <label for="floatingPassword">Password</label>-->
+<!--  </div>-->
+<!--  <div class="form-floating">-->
+<!--    <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">-->
+<!--    <label for="floatingPassword2">Repeat Password</label>-->
+<!--  </div>-->
+<!--  <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>-->
+<!--</form>-->
+
+<!--<div class="d-flex justify-content-center">-->
+<!--  <div class="p-0">-->
+<!--    <form [formGroup]="form">-->
+<!--      <div class="form-floating">-->
+<!--        <input type="text" class="form-control" id="name" placeholder="name" formControlName="name">-->
+<!--        <label for="name">Name</label>-->
+<!--      </div>-->
+<!--      <div class="form-floating">-->
+<!--        <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email">-->
+<!--        <label for="email">Email</label>-->
+<!--      </div>-->
+<!--      <div class="form-floating">-->
+<!--        <input type="password" class="form-control" id="password" placeholder="password" formControlName="password">-->
+<!--        <label for="password">Password</label>-->
+<!--      </div>-->
+<!--      <button type="submit" class="btn btn-primary" [disabled]="!(isSubmit | async)" (click)="register()">Sign up</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+
+<section class="h-100 gradient-form">
+  <div class="container py-5 h-90">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="assets/Logo1.svg" style="width: 100px;" alt="logo">
+                </div>
+
+                <form [formGroup]="form">
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name" class="form-control"
+                           placeholder="First Name"  formControlName="name" />
+                    <label class="form-label" for="name">First Name </label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control"
+                           placeholder="Email address"  formControlName="email" />
+                    <label class="form-label" for="email">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control" formControlName="password" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="login-b" type="submit" [disabled]="!(isSubmit | async)" (click)="register()">Sign Up</button>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <a type="button" href="/login" class="btn btn-outline-danger">Sign In</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="img-logo-1">
+              <img src="assets/login2.png" alt="Company Image" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-background></app-background>

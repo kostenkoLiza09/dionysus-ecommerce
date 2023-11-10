@@ -1,0 +1,185 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 1000px;
+  margin-right: 15px;
+  margin-left: auto;
+  font-family: Montserrat;
+}
+
+.card {
+  width: 200px;
+  height: 310px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+
+  img {
+    width: 80px;
+    height: 140px;
+    object-fit: cover;
+    filter: grayscale(20%);
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.09);
+
+    }
+  }
+
+  .whiskey-brand{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .name {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      padding-top: 30px;
+    }
+
+
+    .country {
+      font-size: 15px;
+      margin-bottom: 1px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .price {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      width: 160px;
+      height: 35px;
+      font-size: 13px;
+      background-color: #3B4D17;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2D410E;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.main-container {
+  margin-left: 110px;
+}
+
+.filter-container {
+
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0px 15px;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: var(--67, #FBFAF7);
+  align-items: flex-start;
+
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 1000px;
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+.filter-title {
+  color: var(--11, #201103);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-item input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #765639;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter-item input[type="checkbox"]:checked {
+  background-color: #765639;
+}
+
+
+.filter-label {
+  color: var(--11, #201103);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.line {
+  position: relative;
+  width: 250px;
+  height: 1px;
+  background-color: #AE9F9B;
+  margin: 6px 0;
+}
+

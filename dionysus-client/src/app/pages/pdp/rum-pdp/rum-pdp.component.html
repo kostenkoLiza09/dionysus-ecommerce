@@ -1,0 +1,33 @@
+<ng-container *ngIf="product">
+  <div class="content">
+    <div class="image-container">
+      <div *ngFor="let imageUrl of product.images">
+        <img [src]="imageUrl" alt="Product Image">
+      </div>
+    </div>
+    <div class="details">
+
+      <ul class="product-info">
+        <div class="name">{{product.name }}</div>
+        <li><span class="label">Brand:</span> {{ product.rumBrandType }}</li>
+        <li><span class="label">Region:</span> {{ product.rumRegionType }}</li>
+        <li><span class="label">Style:</span> {{ product.rumStyleType }}</li>
+        <li><span class="label">Country:</span> {{ product.countryType }}</li>
+        <li><span class="label">Age:</span> {{ product.age }}</li>
+        <li><span class="label">ABV:</span> {{ product.alcohol_by_volume }} %</li>
+        <li><span class="label price">Price</span> {{ product.price }} $</li>
+      </ul>
+
+      <div class="buy-button">
+        Buy
+      </div>
+      <app-delivery></app-delivery>
+    </div>
+  </div>
+  <div class="block-item" >
+    <h2>Description</h2>
+    <span class="description"></span> {{ product.description }}
+  </div>
+  <app-rum-component></app-rum-component>
+</ng-container>
+<app-background></app-background>

@@ -1,0 +1,20 @@
+<ng-container *ngIf="winePlpList$ | async as winePlpList">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <div class="card-container">
+    <div class="row">
+      <div class="card"  *ngFor="let plp of winePlpList">
+        <div class="whiskey-brand">{{plp.countryType}} </div>
+        <img src="{{plp.image}}" alt="Product Image">
+        <div class="content">
+          <div class="name">{{plp.name}}</div>
+          <div class="info">
+            <p class="price">{{plp.price}}.00$</p>
+            <p class="country">{{plp.wineBrandType}}</p>
+          </div>
+          <button class="buy-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

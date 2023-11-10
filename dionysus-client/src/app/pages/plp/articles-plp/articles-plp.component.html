@@ -1,0 +1,14 @@
+<div class="parent-container">
+  <ng-container *ngIf="ArticlesPlpList$ | async as plpList">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <div class="card-container">
+      <div class="card" *ngFor="let plp of plpList" (click)="redirectToArticlesPdp(plp.id)">
+        <img src="{{plp.imagUrl}}" alt="Product Image" class="product-image">
+        <div class="content">
+          <div class="name">{{plp.name}}</div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
